@@ -71,6 +71,7 @@ body {
 
 section {
     min-height: 100vh;
+
 }
 
 #home {
@@ -363,6 +364,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        padding: 0 50px 0 25px;
+    }
     .menu-btn {
         display: block;
     }
@@ -390,8 +394,18 @@ section {
     .col {
         padding: 0px;
     }
+    .title h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
     .services {
         grid-template-columns: repeat(1, minmax(280px, 1fr));
+        padding: 0 20px;
+    }
+    .work-item {
+        width: 335px;
+        height: 223px;
     }
 
 }
