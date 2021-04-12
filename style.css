@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: #eeeeee;
+    z-index: 10;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    color: #111;
+    display: inline-block;
+}
+
+.menu-items a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #111;
+    transition: width .3s ;
+}
+
+.menu-items a:hover::after {
+    width: 100%;
+}
+
+.menu-btn {
+    font-size: 2rem;
+    color: #111;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+.col {
+    max-width: 50%;
+    padding: 50px;
+}
+
+.col h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.col p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.col button {
+    padding: 12px 16px;
+    background-color: #222831;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.col button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #eeeeee;
+}
+
+.col button:hover {
+    background-color: #393e46;
+}
+
+.col img {
+    width: 40vw;
+}
+
+
+/* SERVICES */
+#services {
+    padding: 80px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.title h1:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    bottom: -5px;
+    left: 20%; 
+    border-bottom: 2px solid #000000;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 100px;
+}
+
+.service h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.service p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* WORK*/
+
+#work {
+    padding: 80px 0;
+    background-color: #eeeeee;
+}
+
+.work {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.work-item {
+    position: relative;
+    width: 365px;
+    height: 243px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+}
+
+.action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.action:hover {
+    opacity: 1;
+}
+
+.action a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 12px;
+    transition: 0.45s ease;
+}
+.action a:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* CONTACT*/
+#contact {
+    padding: 80px 0;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.row {
+    width: 60%;
+    display: flex;
+    padding: 10px;
+}
+
+.row .row-50 {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.row-100 {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.row input, .row textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5f5f5f;
+    color: #111;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    resize: none;
+}
+
+.row textarea {
+    height: 200px;
+}
+
+.row input[type='submit'] {
+    background-color: #222831;
+    color: #eeeeee;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.row input[type='submit']:hover {
+    background-color: #393e46;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111;
+}
+
+
+/* MEDIA QUERIES*/
+@media screen and (max-width: 1068px) {
+    .menu-items a {
+        font-size: 1.1rem;
+        padding: 0 1.4rem;
+    } 
+    .col-img {
+        display: none;
+    }
+    .col {
+        max-width: 80%;
+    }   
+    .services {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+    .row {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .row .row-50 {
+        width: 100%;
+        margin: 10px;
+    }
+    .row-100 {
+        width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    .menu-items {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #eeeeee;
+        transition: .45s ease;
+        transform: translateX(100vw);
+    }
+    .menu-items a{
+        padding: 2rem 0;
+        font-weight: 400;
+    }
+    .menu-items.active {
+        transform: translateX(0);
+    }
+    .col {
+        padding: 0px;
+    }
+    .services {
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+    }
+
+}
