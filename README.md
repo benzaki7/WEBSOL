@@ -1,2 +1,2 @@
 # WEBSOL
-Responsive Single Page Website Using html, css and javascript
+Responsive Single Page Website Using HTML, CSS and JAVASCRIPT
