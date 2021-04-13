@@ -409,4 +409,7 @@ section {
     .work-item {
         height: auto;
     }
+    .row {
+        width: 100%;
+    }
 }
