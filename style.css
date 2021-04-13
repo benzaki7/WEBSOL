@@ -71,7 +71,6 @@ body {
 
 section {
     min-height: 100vh;
-
 }
 
 #home {
@@ -87,7 +86,7 @@ section {
 }
 
 .col h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 5vw, 2rem);
     font-weight: 500;
     margin-bottom: 20px;
     color: #111;
@@ -209,7 +208,7 @@ section {
 
 .work-item {
     position: relative;
-    width: 365px;
+    max-width: 365px;
     height: 243px;
     margin: 10px;
     overflow: hidden;
@@ -329,6 +328,7 @@ section {
     font-size: 1rem;
     font-weight: 400;
     color: #111;
+    text-align: center;
 }
 
 
@@ -365,7 +365,10 @@ section {
 
 @media screen and (max-width: 768px) {
     .header {
-        padding: 0 50px 0 25px;
+        padding: 0 25px;
+    }
+    .logo {
+        font-size: 1.7rem;
     }
     .menu-btn {
         display: block;
@@ -404,8 +407,6 @@ section {
         padding: 0 20px;
     }
     .work-item {
-        width: 335px;
-        height: 223px;
+        height: auto;
     }
-
 }
