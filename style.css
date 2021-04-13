@@ -274,6 +274,7 @@ section {
 .row {
     width: 60%;
     display: flex;
+    align-items: center;
     padding: 10px;
 }
 
