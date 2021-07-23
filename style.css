@@ -376,10 +376,10 @@ section {
     }
     .menu-items {
         position: absolute;
-        top: 10vh;
+        top: 8vh;
         right: 0;
         width: 100vw;
-        height: 90vh;
+        height: 92vh;
         display: flex;
         flex-direction: column;
         align-items: center;
